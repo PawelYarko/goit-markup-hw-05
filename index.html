@@ -20,7 +20,7 @@
             <nav class="nav">
                 <a href="./index.html" class="nav-logo"><span class="nav-logo-color">Web</span>Studio</a>
                 <ul class="nav-list list">
-                    <li class="nav-list-item"><a href="" class="nav-list-link link">Студия</a></li>
+                    <li class="nav-list-item"><a href="" class="nav-list-link link link-is-hidden">Студия</a></li>
                     <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link link">Портфолио</a></li>
                     <li class="nav-list-item"><a href="" class="nav-list-link link">Контакты</a></li>
                 </ul>
@@ -52,7 +52,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
-                <a href="" class="hero-btn">Заказать услугу</a>    
+                <button class="hero-btn" data-modal-open>Заказать услугу</button>  
             </div>
         </section>
 
@@ -113,11 +113,17 @@
                 <h2 class="about-title">Чем мы занимаемся</h2>
                 <ul class="list about-list">
                     <li class="about-list-item"><img src="./img/img-1.jpg" alt="человек пишет код за компьютером" width="370"
-                            height="294"></li>
+                            height="294">
+                        <p class="about-list-item-text">Десктопные приложения</p>
+                        </li>
                     <li class="about-list-item"><img src="./img/img-2.jpg" alt="человек проверяет приложение на мобильном устройстве"
-                            width="370" height="294"></li>
+                            width="370" height="294">
+                        <p class="about-list-item-text">Мобильные приложения</p>
+                        </li>
                     <li class="about-list-item"><img src="./img/img-3.jpg" alt="человек выбирает цвет на планшете" width="370"
-                            height="294"></li>
+                            height="294">
+                        <p class="about-list-item-text">Дизайнерские решения</p>
+                        </li>
                 </ul>
             </div>
         </section>
@@ -358,5 +364,15 @@
             </div>
         </div>
     </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+            <svg class="modal-btn-close"data-modal-close>
+                <use href="./img/icon-img/icons.svg#icon-close"></use>
+            </svg>
+    </div>
+</div>
+
+<script src="./js/modal.js"></script>
+
 </body>
 </html>
